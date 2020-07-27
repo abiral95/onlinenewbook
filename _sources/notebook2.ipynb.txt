@@ -1,0 +1,119 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Conservative transport Processes"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "from matplotlib import rcParams, cycler\n",
+    "import matplotlib.pyplot as plt\n",
+    "import numpy as np\n",
+    "plt.ion()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 1D Advection and advective mass rate\n",
+    "\n",
+    "Advection, also called convection, is the transport of components (matter or also energy) due to moving medium. The moving medium, i.e., a carrier is, usually groundwater. Thus, quantities that characterizes flow also characterizes advective transport.\n",
+    "\n",
+    "```{note}\n",
+    "The moving medium, i.e., a carrier is, usually groundwater.\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "\n",
+    "```{admonition} Tip\n",
+    ":class: tip\n",
+    "Please referto page 200 of the course book for assignment solution.\n",
+    "```\n",
+    "\n",
+    "\n",
+    "```{warning}\n",
+    "Please do not use arbitrary data for the graph plot.\n",
+    "```\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "tags": "hide-cell"
+   },
+   "outputs": [],
+   "source": [
+    "# Fixing random state for reproducibility\n",
+    "np.random.seed(19680801)\n",
+    "\n",
+    "N = 10\n",
+    "data = [np.logspace(0, 1, 100) + np.random.randn(100) + ii for ii in range(N)]\n",
+    "data = np.array(data).T\n",
+    "cmap = plt.cm.coolwarm\n",
+    "rcParams['axes.prop_cycle'] = cycler(color=cmap(np.linspace(0, 1, N)))\n",
+    "\n",
+    "\n",
+    "from matplotlib.lines import Line2D\n",
+    "custom_lines = [Line2D([0], [0], color=cmap(0.), lw=4),\n",
+    "                Line2D([0], [0], color=cmap(.5), lw=4),\n",
+    "                Line2D([0], [0], color=cmap(1.), lw=4)]\n",
+    "\n",
+    "fig, ax = plt.subplots(figsize=(10, 5))\n",
+    "lines = ax.plot(data)\n",
+    "ax.legend(custom_lines, ['Cold', 'Medium', 'Hot']);"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Is advection enough?\n",
+    "\n",
+    "Probably not. Advection may only be possible in uniformly packed porous medium with also perfectly uniform particle size distribution of medium particles. This is rather exception. In normal cases, the the particle transport will spread out leading some matter exiting earlier then remaining others. This is explained by process called mechanical dispersion."
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6-final"
+  },
+  "widgets": {
+   "application/vnd.jupyter.widget-state+json": {
+    "state": {},
+    "version_major": 2,
+    "version_minor": 0
+   }
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
