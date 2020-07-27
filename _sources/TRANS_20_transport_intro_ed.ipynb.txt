@@ -1,0 +1,79 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Transport in groundwater\n",
+    "\n",
+    "```{note}\n",
+    "based on lecture 9 of HSE GW course\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "The **transport** is the second among the three components of our course. <br>\n",
+    "<br>\n",
+    "The **transport** in groundwater deals with quantification of any component that flows along with the groundwater. The compoents can be living organisms, e.g., bacteria, virus;<br> chemicals, e.g., oil, CO$_2$ or porous media, e.g., sand, soil<br>\n",
+    "<br>\n",
+    "Thus, one differentiates between groundwater **flow** - as studies related with only water as against **transport** - related to components flowing along with groundwater.<br>\n",
+    "In terms of unit of measurements, the flow studies deals with volumetric unit [L$^3$], whereas transport study deals with qunatification of mass [M] often as per unit volume of groundwater or concentration [ML$^{-3}$]. **Space** and **time** are fundamental variables in both flow and transport studies.<br>\n",
+    "<br>\n",
+    "<br>\n",
+    "The _transport_ in groundwater can be categorized into the two following group.<br>\n",
+    "<br>\n",
+    "1. Conservative transport<br>\n",
+    "2. Reactive transport<br>\n",
+    "<br>\n",
+    "We start with a clean destinction between the two transports."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Conservative and reactive transport systems ## \n",
+    "\n",
+    "**Conservative transport system** is when there is\n",
+    "- no interaction with aquifer solid material,\n",
+    "- no interaction with other chemicals,\n",
+    "- no interaction with living organisms (e.g., bacteria)\n",
+    "\n",
+    "```{warning}\n",
+    "When either of the above interaction is part of the process, then the system is **reactive**.\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "In the course, the conservative transport will introduce fundamental transport processes such as **advection**, **mechanical dispersion** and **diffusion**.<br> Then in the reactive transport, these processes will be combined with reaction processes such as **sorption**, **degradation**. Eventually, fundamental equation for modeling transport (conservative and reactive) will be developed."
+   ]
+  }
+ ],
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6-final"
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python3",
+   "display_name": "Python 3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
